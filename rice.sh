@@ -149,7 +149,7 @@ EOF
     fi
 fi
 
-# Write out the dynamic, user-adaptive Catppuccin prompt stylesheet for Starship
+# Write out the dynamic, user-adaptive Catppuccin prompt stylesheet for Starship (Fixed format variables)
 mkdir -p "$HOME/.config"
 cat << 'EOF' > "$HOME/.config/starship.toml"
 format = """
@@ -182,7 +182,7 @@ format = "on [$symbol$branch]($style) "
 
 [git_status]
 style = "fg:#f38ba8"
-format = "[[$all_status$ahead_behind]($style)] "
+format = "([$all_status$ahead_behind]($style)) "
 
 [character]
 success_symbol = "[ ➜](bold #a6e3a1)"
